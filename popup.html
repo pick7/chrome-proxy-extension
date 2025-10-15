@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  <!-- 添加这行声明UTF-8编码 -->
+    <style>
+        /* 保持原有的样式 */
+        body {
+            width: 300px;
+            padding: 10px;
+        }
+        .container {
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+        }
+        .status {
+            margin-top: 10px;
+            padding: 5px;
+        }
+        .active {
+            color: green;
+        }
+        .inactive {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>代理设置</h3>
+        <input type="text" id="proxyInput" placeholder="格式: ip:port:username:password">
+        <br>
+        <button id="saveBtn">保存配置</button>
+        <button id="toggleBtn">启用代理</button>
+        <div id="status" class="status inactive">代理未启用</div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
